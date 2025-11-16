@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.0/dist/flowbite.min.css" rel="stylesheet"/>
     <title>Document</title>
 </head>
 <style type="text/tailwindcss">
@@ -17,17 +18,61 @@
     }
 </style>
 <body>
-    <div class="relative overflow-hidden bg-[#d7d7d7] p-[20px] h-[500px]">
-        <h1 class="font-family: 'Roboto', sans-serif; text-[32px] font-bold pl-20 ">MERCYTECH</h1>
+    <div class="relative overflow-hidden bg-[#d7d7d7] p-[20px] h-[500px] max-sm:bg-[url('/img/Background.png')] max-sm:bg-center max-sm:bg-no-repeat max-sm:bg-cover">
+        <!-- <div class="lg:display: none; absolute top-0 left-0 sm:display:flex bg-[url('/img/Background.png')]; w-[100%] h-[500px] bg-center bg-no-repeat bg-cover"></div> -->
+        <h1 class="font-family: 'Roboto', sans-serif; text-[32px] font-bold pl-20 max-sm:hidden">MERCYTECH</h1>
+        <div class="flex items-center justify-between">
+            
+            <div>
+                <nav class="bg-neutral-primary fixed max-sm-[w-full] justify-between z-20 top-0 start-0 border-0 border-default">
+                    <div class="flex flex-wrap items-center justify-between mx-auto p-4">
+                        <div class="flex items-center justify-between ">
+                            <!-- <a href="" class="flex items-center space-x-3 ltr:space-x-reverse">
+                                <span class="self-center text-xl text-heading font-bold whitespace-nowrap">MERCYTECH</span>
+                            </a> -->
+                            <H1 class="max-sm:pr-44 sm:pr-84 lg:pr-64">MERCYTECH</H1>
+                            <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2  w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary" aria-controls="navbar-default" aria-expanded="false">
+                                <span class="sr-only">Open main menu</span>
+                                <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="30" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/></svg>
+                            </button>
+                        </div>
+                        <div class="hidden w-full md:block md:hidden" id="navbar-default">
+                            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-default rounded-base bg-neutral-secondary-soft md:flex-row md:space-x-8 ltr:space-x-reverse md:mt-0 md:border-0 md:bg-neutral-primary">
+                                <li>
+                                <a href="#" class="block lg:hidden py-2 px-3 text-white bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0" aria-current="page">Home</a>
+                                </li>
+                                <li>
+                                <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent lg:hidden md:hidden">About</a>
+                                </li>
+                                <li>
+                                <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent lg:hidden md:hidden">Services</a>
+                                </li>
+                                <li>
+                                <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent lg:hidden md:hidden">Pricing</a>
+                                </li>
+                                <li>
+                                <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent lg:hidden md:hidden">Contact</a>
+                                </li> 
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+  
+            </div>
+        </div>
         <h4 class="font-family: 'Roboto', sans-serif; text-[24px]  mt-[90px] pl-25 ">Hi; I am </h4>
         <h2 class="font-family: 'Roboto', sans-serif; text-[32px] font-extrabold pl-25 mt-[20px]">Oyeniyi Isaac </h2>
         <p class="font-family: 'Roboto', sans-serif; text-[20px]  pl-25 text-[#d7d7d7] text-shadow-lg/30">A Fullstack Developer </p>
-        <div class="absolute top-0 -right-20 bg-[#000000] p-[10px] text-white w-[60%] h-[500px] skew-x-[-12deg]">
+        <div class=" absolute top-0 -right-20 bg-[#000000] max-sm:hidden p-[10px] text-white w-[60%] h-[500px] skew-x-[-12deg]">
             <div class="flex gap-20 px-10 py-[20px] font-family: 'Roboto', sans-serif; text-[16px] font-semibold items-center">
                 <a href="">About</a>
                 <a href=""> Services</a>
                 <a href=""> Portfolio</a>
                 <button class="p-[10px] bg-[#ffffff] text-[#000000] rounded-full hover:bg-[#d7d7d7] "><a href="">Contact Us</a></button>
+            </div>
+            <div>
+                <img src="/img/WhatsApp_Image_2025-11-16_at_15.58.49-removebg-preview.png" width="600px" class="absolute -top-[100px] right-[200px] skew-x-[12deg]">
             </div>
         </div>
     </div>
@@ -105,11 +150,16 @@
             </div>
           </div>
         </div>
-        <footer class="bg-[#000000] text-white text-center p-5 ">
+        <footer class="bg-[#000000] text-white text-center flex flex-col items-center justify-center p-5 gap-2  ">
+            <div class="flex gap-10">
+                <a href="https://github.com/oyeniyiisaac"><img src="/img/Vector.png" alt="GitHub logo link to Oyeniyi Isaac's GitHub profile" class="bg-[#d7d7d7] p-3 items-center"></a>
+                <a href="https://www.linkedin.com/in/isaac-oyeniyi-619b30345?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="/img/Vector1.png" alt="LinkedIn logo link to Oyeniyi Isaac's LinkedIn profile" class="bg-[#d7d7d7] p-2 items-center"></a>
+            </div>
             <p>&copy; 2024 MERCYTECH. All rights reserved.</p>
 
 
         </footer>
-    </div>    
+    </div> 
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.0/dist/flowbite.min.js"></script>   
 </body>
 </html>
